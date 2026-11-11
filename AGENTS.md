@@ -21,14 +21,14 @@ npm/pnpm workspaces. Shared types and Zod schemas live in `packages/theory`.
 
 ## Commands
 
-Fill these in as the tooling is set up (task S1-1):
+Set up in task S1-1. All commands run from the repository root:
 
 ```
-install:    <to be filled>
-test:       <to be filled>   # Vitest
-lint:       <to be filled>
-typecheck:  <to be filled>
-dev (web):  <to be filled>
+install:    npm install
+test:       npm run test       # Vitest, in every workspace that has tests (today: packages/theory)
+lint:       npm run lint       # ESLint (flat config); npm run format:check verifies Prettier
+typecheck:  npm run typecheck  # tsc --noEmit in every workspace that has a tsconfig
+dev (web):  not yet — added with the Next.js scaffold (S2-4)
 ```
 
 Always run test, lint and typecheck before saying a task is done.
