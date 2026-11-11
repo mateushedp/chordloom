@@ -1,0 +1,6 @@
+{
+  "name": "@chordloom/api",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ChordLoom Node API. Placeholder only; scaffolded in S3-2."
+}

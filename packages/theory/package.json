@@ -1,0 +1,17 @@
+{
+  "name": "@chordloom/theory",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ChordLoom music-theory engine: pure TypeScript, no DOM, no DB.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "vitest": "^5.1.0"
+  }
+}

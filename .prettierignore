@@ -1,0 +1,10 @@
+# Generated files
+package-lock.json
+
+# Build output
+dist/
+coverage/
+
+# Hand-written docs: keep their formatting as-is
+docs/
+AGENTS.md
