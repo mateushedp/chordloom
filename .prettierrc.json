@@ -1,1 +1,10 @@
-{}
+{
+  "printWidth": 120,
+  "useTabs": true,
+  "overrides": [
+    {
+      "files": ["*.json", "*.jsonc", "*.md", "*.yml", "*.yaml"],
+      "options": { "useTabs": false }
+    }
+  ]
+}
