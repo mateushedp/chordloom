@@ -1,4 +1,4 @@
-import type { PitchClass } from "./types";
+import { isPitchClass, type PitchClass } from "./types";
 
 /** The chord qualities supported by the engine. More qualities will be added later. */
 export type Quality = "maj" | "min" | "dom7";
@@ -20,7 +20,7 @@ const QUALITY_INTERVALS: Record<Quality, readonly PitchClass[]> = {
 export function chordTones(chord: Chord): PitchClass[] {
 	const { root, quality } = chord;
 
-	if (!Number.isInteger(root) || root < 0 || root > 11) {
+	if (!isPitchClass(root)) {
 		throw new RangeError(`Invalid root pitch class: ${String(root)}`);
 	}
 

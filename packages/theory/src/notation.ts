@@ -6,7 +6,7 @@
  * Context-aware enharmonic spelling is deferred to S1-3b.
  */
 
-import type { PitchClass } from "./types";
+import { toPitchClass, type PitchClass } from "./types";
 
 export type Accidental = "sharp" | "flat";
 export type Notation = "en" | "pt";
@@ -23,6 +23,6 @@ const NOTE_NAMES: Record<Notation, Record<Accidental, readonly string[]>> = {
 };
 
 export function noteName(pc: PitchClass, options: { accidental: Accidental; notation: Notation }): string {
-	const index = ((pc % 12) + 12) % 12;
+	const index = toPitchClass(pc);
 	return NOTE_NAMES[options.notation][options.accidental][index];
 }
