@@ -6,7 +6,8 @@
  * Context-aware enharmonic spelling is deferred to S1-3b.
  */
 
-export type PitchClass = number;
+import type { PitchClass } from "./types";
+
 export type Accidental = "sharp" | "flat";
 export type Notation = "en" | "pt";
 
